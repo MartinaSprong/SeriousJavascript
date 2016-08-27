@@ -10,8 +10,8 @@ dat dit geen probleem is. De huidige API leek me interessanter, alhoewel
 ik geen idee heb of de data waar is. De structuur van het project
 is niet veranderd, slechts de content.
 
-Als je op de homepage staat kun je drie kenmerken selecteren. Per kenmerk krijg je een lijst aan namen. Als je op 
-de naam klikt, krijg je verdere informatie over deze persoon.
+Als je op de homepage staat kun je drie kenmerken selecteren. Per kenmerk krijg je een lijst aan namen. 
+Onder de naam is verdere informatie over deze persoon te zien. Ook is er een link naar de API.
 
 De opdracht is gemaakt in Backbone en Underscore Javascript. Voor de front-end is er gebruik gemaakt van material 
 design. 
