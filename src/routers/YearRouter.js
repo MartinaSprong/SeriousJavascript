@@ -4,7 +4,7 @@
 import {Router} from 'backbone';
 
 /**
- * Router for the matches URL's
+ * Router for the year URL's
  *
  * @constructor
  */

@@ -5,7 +5,7 @@ import {View} from 'backbone';
 import YearRouter from '../routers/YearRouter';
 
 /**
- * Object representing the TeamLinks element
+ * Object representing the YearLinks element
  *
  * @constructor
  */
@@ -18,7 +18,7 @@ const YearLinks = View.extend({
 
     initialize: function ()
     {
-        //Initialize the matches router to activate navigation
+        //Initialize the year router to activate navigation
         this.router = new YearRouter();
     },
 

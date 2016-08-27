@@ -5,7 +5,7 @@ import {View} from 'backbone';
 import AgeRouter from '../routers/AgeRouter';
 
 /**
- * Object representing the TeamLinks element
+ * Object representing the ageLinks element
  *
  * @constructor
  */

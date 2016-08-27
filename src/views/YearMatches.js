@@ -19,7 +19,7 @@ const YearMatches = View.extend({
     },
 
     /**
-     * Wrapper function to load the companies through the collection
+     * Wrapper function to load the years through the collection
      *
      * @param data
      */
