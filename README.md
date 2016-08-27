@@ -6,3 +6,6 @@ van de slachtoffers.
 
 Als je op de homepage staat kun je drie kenmerken selecteren. Per kenmerk krijg je een lijst aan namen. Als je op 
 de naam klikt, krijg je verdere informatie over deze persoon.
+
+De opdracht is gemaakt in Backbone en Underscore Javascript. Voor de front-end is er gebruik gemaakt van material 
+design. 
