@@ -14,7 +14,7 @@
 <body>
 
 <div id="container">
-    <h2>Officer involved killings in the United States of America</h2>
+    <h2>Find victims of officer involved killings in the United States of America</h2>
     <div id="age-links">
         <span class="start-message">Choose age</span>
         <a href="#" data-age="20" >20</a> /
@@ -32,73 +32,84 @@
     <div id="year-links">
         <span class="start-message">Choose year</span>
         <a href="#" data-year="2015" >2015</a> /
-        <a href="#" data-year="2016" >2016</a>
+        <a href="#" data-year="2016" >2016</a> (<--Start here and move your way up!)
     </div>
 
-    <div id="age-matches">
-        <script id="template-error" type="text/template">
-            <span class="error"><%= message %></span>
-        </script>
-        <script id="template-matches" type="text/template">
-            <% _.each(killings, function(killing, index, list){ %>
-            <div class="col s4 m3">
-                <div class="card">
-                    <div class="card-content">
-                        <span class="card-title"><%= killing.get('name')  %></span>
-                        <p><a href="#">Visit API</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                    </div>
+    <div class="row">
+        <div id="age-matches">
+            <script id="template-error" type="text/template">
+                <span class="error"><%= message %></span>
+            </script>
+            <script id="template-matches" type="text/template">
+                <% _.each(killings, function(killing, index, list){ %>
+        <div class="col s6 ">
+            <div class="card">
+                    <span class="card-title"><%= killing.get('name')  %></span>
+                <div class="card-content">
+                    <p>Age: <%= killing.get('age') %></p>
+                    <p>City: <%= killing.get('city') %></p>
+                    <p>Cause: <%= killing.get('cause') %></p>
+                    <p>By department: <%= killing.get('dept') %></p>
+                </div>
+                <div class="card-action">
+                    <a href="https://thecountedapi.com/">Visit API</a>
                 </div>
             </div>
-            <% }); %>
-        </script>
+        </div>
+                <% }); %>
+            </script>
+    </div>
+</div>
+    <div class="row">
+        <div id="sex-matches">
+            <script id="template-error-sex" type="text/template">
+                <span class="error"><%= message %></span>
+            </script>
+            <script id="template-matches-sex" type="text/template">
+                <% _.each(killings, function(killing, index, list){ %>
+                <div class="col s6">
+                    <div class="card">
+                        <span class="card-title"><%= killing.get('name')  %></span>
+                        <div class="card-content">
+                            <p>Age: <%= killing.get('age') %></p>
+                            <p>City: <%= killing.get('city') %></p>
+                            <p>Cause: <%= killing.get('cause') %></p>
+                            <p>By department: <%= killing.get('dept') %></p>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://thecountedapi.com/">Visit API</a>
+                        </div>
+                    </div>
+                </div>
+                <% }); %>
+            </script>
+        </div>
     </div>
 
-    <div id="sex-matches">
-        <script id="template-error-sex" type="text/template">
-            <span class="error"><%= message %></span>
-        </script>
-        <script id="template-matches-sex" type="text/template">
-            <% _.each(killings, function(killing, index, list){ %>
-            <div class="col s4 m3">
-                <div class="card">
-                    <div class="card-content">
+    <div class="row">
+        <div id="year-matches">
+            <script id="template-error-year" type="text/template">
+                <span class="error"><%= message %></span>
+            </script>
+            <script id="template-matches-year" type="text/template">
+                <% _.each(killings, function(killing, index, list){ %>
+                <div class="col s6">
+                    <div class="card">
                         <span class="card-title"><%= killing.get('name')  %></span>
-                        <p><a href="#">Visit API</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        <div class="card-content">
+                            <p>Age: <%= killing.get('age') %></p>
+                            <p>City: <%= killing.get('city') %></p>
+                            <p>Cause: <%= killing.get('cause') %></p>
+                            <p>By department: <%= killing.get('dept') %></p>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://thecountedapi.com/">Visit API</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <% }); %>
-        </script>
-    </div>
-
-    <div id="year-matches">
-        <script id="template-error-year" type="text/template">
-            <span class="error"><%= message %></span>
-        </script>
-        <script id="template-matches-year" type="text/template">
-            <% _.each(killings, function(killing, index, list){ %>
-            <div class="col s4 m3">
-                <div class="card">
-                    <div class="card-content">
-                        <span class="card-title"><%= killing.get('name')  %></span>
-                        <p><a href="#">Visit API</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                    </div>
-                </div>
-            </div>
-            <% }); %>
-        </script>
+                <% }); %>
+            </script>
+        </div>
     </div>
 </div>
 
