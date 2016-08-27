@@ -9,3 +9,7 @@ de naam klikt, krijg je verdere informatie over deze persoon.
 
 De opdracht is gemaakt in Backbone en Underscore Javascript. Voor de front-end is er gebruik gemaakt van material 
 design. 
+
+Punten voor verbetering:
+- Wanneer je eerst op leeftijd zoekt, kun je niet meer op geslacht of jaar zoeken. Andersom wel.?
+- Bij refreshen "No input found"?
